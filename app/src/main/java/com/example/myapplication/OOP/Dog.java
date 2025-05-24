@@ -17,7 +17,7 @@ public class Dog extends Animal implements InterfaceTest, InterfaceTest2 {
     }
 
     @Override
-    public void sound2() {
+    public void sound222() {
         System.out.println("TEST TEST 2");
     }
 
