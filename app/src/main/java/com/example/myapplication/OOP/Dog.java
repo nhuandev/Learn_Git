@@ -17,6 +17,16 @@ public class Dog extends Animal implements InterfaceTest, InterfaceTest2 {
     }
 
     @Override
+    public void sound2() {
+        System.out.println("TEST TEST 2");
+    }
+
+    @Override
+    public void sound3() {
+        System.out.println("TEST TEST 3");
+    }
+
+    @Override
     public double cong3so(double a, double b, double c) {
         return a + b + c;
     }
