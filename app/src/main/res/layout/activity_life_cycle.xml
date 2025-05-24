@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Activitys.LifeCycleActivity"> <TextView
+    android:id="@+id/textViewStatus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Trạng thái Activity: Khởi động"
+    android:textSize="22sp"
+    android:textStyle="bold"
+    android:textColor="#3F51B5"
+    app:layout_constraintBottom_toTopOf="@+id/editTextData"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_chainStyle="packed"
+    android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/editTextData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập dữ liệu để kiểm tra lưu trạng thái..."
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStartNewActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStatus"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/buttonStartNewActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Mở Activity Mới"
+        android:textSize="18sp"
+        android:paddingVertical="12dp"
+        android:backgroundTint="#00BCD4"
+        app:layout_constraintBottom_toTopOf="@+id/buttonShowDialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextData"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/buttonShowDialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Hiện Dialog (Che một phần Activity)"
+        android:textSize="18sp"
+        android:paddingVertical="12dp"
+        android:backgroundTint="#FFC107"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFinish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStartNewActivity"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/buttonFinish"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Kết thúc Activity này"
+        android:textSize="18sp"
+        android:paddingVertical="12dp"
+        android:backgroundTint="#F44336"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonShowDialog"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
