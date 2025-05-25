@@ -1,12 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFEB3B">
+    android:background="#E0F7FA">
 
     <TextView
-        android:text="Fragment Profile"
-        android:textSize="24sp"
-        android:layout_gravity="center"
+        android:id="@+id/fragment_text_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Đây là MyFragment!"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/fragment_container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"> <Button
+        android:id="@+id/btnUser"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" android:text="Button User"
+        android:layout_marginBottom="8dp" /> <EditText
+        android:id="@+id/fragment_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" android:hint="Nhập text để kiểm tra lưu trạng thái Fragment"
+        android:padding="8dp"
+        android:background="@android:drawable/editbox_background" /> </LinearLayout>
+
 </FrameLayout>

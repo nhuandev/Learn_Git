@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.myapplication.Activitys.LifeCycleActivity;
 import com.example.myapplication.Activitys.UserActivity;
+import com.example.myapplication.OOP.Dog;
 import com.example.myapplication.R;
 
 public class HomeFragment extends Fragment {
